@@ -30,9 +30,6 @@ background-color: rgb(120,120,120);
   </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QGridLayout" name="gridLayout">
-    <item row="1" column="1">
-     <widget class="QTextEdit" name="textEdit"/>
-    </item>
     <item row="0" column="0">
      <widget class="QLabel" name="label">
       <property name="text">
@@ -44,6 +41,16 @@ background-color: rgb(120,120,120);
      <widget class="QLineEdit" name="lineEdit"/>
     </item>
     <item row="1" column="0">
+     <widget class="QLabel" name="label_sender">
+      <property name="text">
+       <string>Sender</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QLineEdit" name="lineEdit_sender"/>
+    </item>
+    <item row="2" column="0">
      <widget class="QLabel" name="label_2">
       <property name="text">
        <string>Body</string>
@@ -51,6 +58,16 @@ background-color: rgb(120,120,120);
      </widget>
     </item>
     <item row="2" column="1">
+     <widget class="QTextEdit" name="textEdit">
+      <property name="maximumSize">
+       <size>
+        <width>1000</width>
+        <height>1000</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="1">
      <widget class="QPushButton" name="emailButton">
       <property name="text">
        <string>Send Email</string>
@@ -65,7 +82,7 @@ background-color: rgb(120,120,120);
      <x>0</x>
      <y>0</y>
      <width>800</width>
-     <height>26</height>
+     <height>30</height>
     </rect>
    </property>
   </widget>

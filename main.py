@@ -11,8 +11,9 @@ class EmailSender(QMainWindow):
         self.emailButton.clicked.connect(self.send_email)
         
     def send_email(self):
+        msg='To:' + self.lineEdit.text() + '\nSubject:Quick request please!\n'
         if self.lineEdit.text():
-            send_email(recipient=self.lineEdit.text(), email=self.textEdit.toPlainText())
+            send_email(recipient=self.lineEdit.text(), email=str("%s%s" % (msg, self.textEdit.toPlainText())), sender=self.lineEdit_sender.text())
         else:
             message = QMessageBox()
             message.setIcon(QMessageBox.Critical)
