@@ -29,52 +29,205 @@ background-color: rgb(120,120,120);
 }</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <layout class="QGridLayout" name="gridLayout">
-    <item row="0" column="0">
-     <widget class="QLabel" name="label">
-      <property name="text">
-       <string>Recipient</string>
-      </property>
-     </widget>
-    </item>
-    <item row="0" column="1">
-     <widget class="QLineEdit" name="lineEdit"/>
-    </item>
-    <item row="1" column="0">
-     <widget class="QLabel" name="label_sender">
-      <property name="text">
-       <string>Sender</string>
-      </property>
-     </widget>
-    </item>
-    <item row="1" column="1">
-     <widget class="QLineEdit" name="lineEdit_sender"/>
-    </item>
-    <item row="2" column="0">
-     <widget class="QLabel" name="label_2">
-      <property name="text">
-       <string>Body</string>
-      </property>
-     </widget>
-    </item>
-    <item row="2" column="1">
-     <widget class="QTextEdit" name="textEdit">
-      <property name="maximumSize">
-       <size>
-        <width>1000</width>
-        <height>1000</height>
-       </size>
-      </property>
-     </widget>
-    </item>
-    <item row="3" column="1">
-     <widget class="QPushButton" name="emailButton">
-      <property name="text">
-       <string>Send Email</string>
-      </property>
-     </widget>
-    </item>
-   </layout>
+   <widget class="QPushButton" name="emailButton">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>502</y>
+      <width>84</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Send Email</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>18</x>
+      <y>15</y>
+      <width>771</width>
+      <height>481</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="0" column="0">
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>Recipient</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QLineEdit" name="lineEdit">
+       <property name="text">
+        <string>fjhgqtaa@sharklasers.com</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="label_sender">
+       <property name="text">
+        <string>Sender</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QLineEdit" name="lineEdit_sender">
+       <property name="text">
+        <string>your-user@your-email.domain</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="label_smtp">
+       <property name="text">
+        <string>SMTP</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QComboBox" name="comboBox_smtp">
+       <property name="editable">
+        <bool>true</bool>
+       </property>
+       <item>
+        <property name="text">
+         <string comment="MTN">mail.mtn.co.za</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string comment="8TA or Telkom Analogue Dial Up">smtp.saix.net</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string comment="Telkom ADS">smtp.dsl.telkomsa.net</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string comment="MWEB">smtp.mweb.co.za</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string comment="Vodacom">smtp.vodacom.co.za</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string comment="Cell C">mail.cmobile.co.za</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string comment="Iburst">smtp.iburst.co.za</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string comment="Internet Solutions (IS) ADSL">smtp.isdsl.net</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string comment="Internet Solutions 3G">smtp.dial-up.net</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string comment="Neotel">smtp.neomail.co.za</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string comment="ABSA">smtp.absamail.co.za</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string comment="@lantic">smtp.lantic.net</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string comment="NetActive">smtp.netactive.co.za</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string comment="Polka">smtp.polka.co.za</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string comment="Web Africa">smtp.wa.co.za</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item row="3" column="0">
+      <widget class="QLabel" name="label_subject">
+       <property name="text">
+        <string>Subject</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QLineEdit" name="lineEdit_subject">
+       <property name="text">
+        <string>Quick request please!</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="0">
+      <widget class="QLabel" name="label_2">
+       <property name="text">
+        <string>Body</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="1">
+      <widget class="QTextEdit" name="textEdit">
+       <property name="maximumSize">
+        <size>
+         <width>1000</width>
+         <height>1000</height>
+        </size>
+       </property>
+       <property name="html">
+        <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Noto Sans'; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Hi&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;In meeting, please can you bring me a ruler, ony one is fine. Just come into the boardroom and drop it off on table please.&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Regards&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Nasser&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_result">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>510</y>
+      <width>561</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Result...</string>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
